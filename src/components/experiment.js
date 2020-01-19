@@ -134,7 +134,8 @@ class Experiment extends Component {
                     start: starts,
                     data: {stimulusId: trialNum, stimulusName: trial.audio},
                     button_label: 'Proceed',
-                    require_movement: true
+                    require_movement: true,
+                    exit: () => {this.setState({exit: true})}
                 }]
             });
         });
@@ -160,6 +161,9 @@ class Experiment extends Component {
                 <div id="experiment" style={ {height: this.height, width: this.width} } ref={ e => {this.experimentDiv = e;} }/>
                 {
                     this.state.experimentComplete && <Redirect to="demographics" />
+                }
+                {
+                    this.state.exit && <Redirect to="exit" />
                 }
             </React.Fragment>
         )
