@@ -45,7 +45,7 @@ class Content extends Component {
             console.log(response);
         })
         .catch(err => {
-            console.log(err);
+            this.setState({'error': 'There was a problem submitting your results. Please try again in a minute or two.'})
         });
     }
 
@@ -89,6 +89,7 @@ class Content extends Component {
                     <Route path="/demographics">
                         <Demographics 
                             onSubmit={ this.onSubmit }
+                            error={ this.state.error }
                         />
                     </Route>
 

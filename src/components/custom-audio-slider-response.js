@@ -152,7 +152,7 @@ var sliders = [];
     if (trial.exit !== undefined) {
       html += '<button id="jspsych-audio-slider-response-exit" class="jspsych-btn" style="background-color: #b50426; color: white; margin-right: 10px;" >Exit Experiment</button>';
     }
-    html += '<button id="jspsych-audio-slider-response-next" class="jspsych-btn" style="background-color: green; color: white;" '+ (trial.require_movement ? "disabled" : "") + '>'+trial.button_label+'</button>';
+    html += '<button id="jspsych-audio-slider-response-next" class="jspsych-btn" style="background-color: ' + (trial.require_movement ? "#8FA78E" : "green") + '; color: white;" '+ (trial.require_movement ? "disabled" : "") + '>'+trial.button_label+'</button>';
 
     display_element.innerHTML = html;
 
@@ -171,6 +171,7 @@ var sliders = [];
           }
           if (sliders.length === trial.labels.length) {
             display_element.querySelector('#jspsych-audio-slider-response-next').disabled = false;
+            display_element.querySelector('#jspsych-audio-slider-response-next').style.backgroundColor = "green";
           }
         })
       }

@@ -98,7 +98,8 @@ class Experiment extends Component {
                 min: mins,
                 max: maxes,
                 start: [0, 0, 0, 0, 0, 0, 0],
-                button_label: 'Proceed'
+                button_label: 'Proceed',
+                exit: () => {this.setState({exit: true})}
             },
             {
                 type: 'audio-slider-response',
@@ -108,7 +109,8 @@ class Experiment extends Component {
                 min: mins,
                 max: maxes,
                 start: [0, 0, 0, 0, 0, 0, 0],
-                button_label: 'Proceed'
+                button_label: 'Proceed',
+                exit: () => {this.setState({exit: true})}
             },
             {
                 type: 'html-button-response',
