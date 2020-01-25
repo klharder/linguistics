@@ -7,51 +7,23 @@ const stimLabels = {
         'max': 3
     },
     1: {
-        'prompt': 'How sympathetic is the speaker?',
-        'minVal': 'less sympathetic',
-        'maxVal': 'sympathetic',
-        'min': -3,
-        'max': 3
-    },
-    2: {
         'prompt': 'How likeable is the speaker?',
         'minVal': 'less likeable',
         'maxVal': 'likeable',
         'min': -3,
         'max': 3
     },
-    3: {
-        'prompt': 'How trustworthy is the speaker?',
-        'minVal': 'less trustworthy',
-        'maxVal': 'trustworthy',
-        'min': -3,
-        'max': 3
-    },
-    4: {
-        'prompt': 'How ambitious is the speaker?',
-        'minVal': 'less ambitious',
-        'maxVal': 'ambitious',
-        'min': -3,
-        'max': 3
-    },
-    5: {
+    2: {
         'prompt': 'How intelligent is the speaker?',
         'minVal': 'less intelligent',
         'maxVal': 'intelligent',
         'min': -3,
         'max': 3
     },
-    6: {
+    3: {
         'prompt': 'How educated is the speaker?',
         'minVal': 'less educated',
         'maxVal': 'educated',
-        'min': -3,
-        'max': 3
-    },
-    7: {
-        'prompt': 'How authoritative is the speaker?',
-        'minVal': 'less authoritative',
-        'maxVal': 'authoritative',
         'min': -3,
         'max': 3
     },
