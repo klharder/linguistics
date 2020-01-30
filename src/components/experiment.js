@@ -38,9 +38,20 @@ class Experiment extends Component {
 
     finishExperiment = (rawResults) => {
         let results = {}
+        console.log(rawResults);
         for (let i = 0; i < rawResults.length; i++) {
+            if (!rawResults[i].response) {
+                continue
+            }
+            let keys = Object.keys(rawResults[i].response);
+            for (let j = 0; j < keys.length; j++){
+                rawResults[i].response[stimLabels[keys[j]].prompt] = rawResults[i].response[j];
+                delete rawResults[i].response[j];
+            }
+
             results[i] = {...rawResults[i].response, stimulus: rawResults[i].stimulus};
         }
+        console.log(rawResults);
         this.setState({experimentComplete: true});
         this.props.onUpdateResults(results);
     }
