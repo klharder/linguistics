@@ -164,7 +164,7 @@ var sliders = [];
     if(trial.require_movement){
       for (i = 0; i < trial.labels.length; i++) {
         display_element.querySelector('#jspsych-audio-slider-response-response-' + i).addEventListener('click', function(e){
-          var fullId = e.toElement.id.split('-');
+          var fullId = e.target.id.split('-');
           var id = fullId[fullId.length - 1]
           if (!sliders.includes(id)) {
             sliders.push(id);
