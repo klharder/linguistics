@@ -46,7 +46,7 @@ var sliders = [];
       step: {
         type: jsPsych.plugins.parameterType.INT,
         pretty_name: 'Step',
-        default: 1,
+        default: 0.05,
         description: 'Sets the step of the slider'
       },
       labels: {
