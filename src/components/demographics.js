@@ -61,7 +61,7 @@ class Demographics extends Component {
                 {
                     this.state.complete !== null && 
                     <div>
-                        <p>You have reached the end of the experiment. Thank you for your participation.</p>
+                        <p>You have reached the end of the experiment and your responses have been submitted successfully. Thank you for your participation.</p>
                     </div>
                 }
             </React.Fragment>
