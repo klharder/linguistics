@@ -110,6 +110,7 @@ class Experiment extends Component {
                 max: maxes,
                 start: [0, 0, 0, 0, 0, 0, 0],
                 button_label: 'Proceed',
+                require_movement: true,
                 exit: () => {this.setState({exit: true})}
             },
             {
@@ -121,6 +122,7 @@ class Experiment extends Component {
                 max: maxes,
                 start: [0, 0, 0, 0, 0, 0, 0],
                 button_label: 'Proceed',
+                require_movement: true,
                 exit: () => {this.setState({exit: true})}
             },
             {
