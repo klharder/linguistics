@@ -111,7 +111,8 @@ class Experiment extends Component {
                 start: [0, 0, 0, 0, 0, 0, 0],
                 button_label: 'Proceed',
                 require_movement: true,
-                exit: () => {this.setState({exit: true})}
+                exit: () => {this.setState({exit: true})},
+                extra_text_html: '<p>Remember, you must respond to <b>all</b> the sliders in order to proceed.<p>'
             },
             {
                 type: 'audio-slider-response',
@@ -123,7 +124,8 @@ class Experiment extends Component {
                 start: [0, 0, 0, 0, 0, 0, 0],
                 button_label: 'Proceed',
                 require_movement: true,
-                exit: () => {this.setState({exit: true})}
+                exit: () => {this.setState({exit: true})},
+                extra_text_html: '<p>Remember, you must respond to <b>all</b> the sliders in order to proceed.<p>'
             },
             {
                 type: 'html-button-response',

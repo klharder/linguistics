@@ -154,6 +154,11 @@ var sliders = [];
     }
     html += '<button id="jspsych-audio-slider-response-next" class="jspsych-btn" style="background-color: ' + (trial.require_movement ? "#8FA78E" : "green") + '; color: white;" '+ (trial.require_movement ? "disabled" : "") + '>'+trial.button_label+'</button>';
 
+    if (trial.extra_text_html) {
+
+      html += "<div style='margin-top: 40px;'>" + trial.extra_text_html + "</div>"
+    }
+
     display_element.innerHTML = html;
 
     var response = {
