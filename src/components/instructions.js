@@ -5,6 +5,9 @@ const Instructions = (props) => {
     return (
         <div>
             <p style={ {'margin': '5% 25% 3% 25%', 'textAlign': 'left'} } >
+                THE EXPERIMENT MUST BE COMPLETED ON A DESKTOP OR LAPTOP COMPUTER
+                <br />
+                <br />
                 Before starting the experiment, we advise that you put the experiment in full screen mode and close all other programs that may be running on your device. We also suggest that you use headphones to listen to the experiment. 
                 <br />
                 <br />
